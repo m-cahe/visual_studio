@@ -1,1 +1,13 @@
 # visual_studio
+
+using DB:     [RestarantDB]
+
+using Table:  [Master].[Customers]          / 	[CustomerId] [int] IDENTITY(1,1) NOT NULL,
+	                                              [CustomerName] [varchar](50) NOT NULL,
+              
+              [Master].[Items]              /   [ItemId] [int] IDENTITY(1,1) NOT NULL,
+	                                              [ItemName] [varchar](50) NOT NULL,
+	                                              [ItemPrice] [decimal](18, 2) NOT NULL
+                                                
+              [Master].[PaymentTypes]       /   [PaymentTypeId] [int] IDENTITY(1,1) NOT NULL,
+	                                              [PaymentTypeName] [varchar](50) NOT NULL
